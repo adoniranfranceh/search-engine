@@ -1,11 +1,12 @@
 import React from "react"
 import { FiSearch } from "react-icons/fi";
+import './styles.css';
 
 function App() {
   return (
     <div className="container">
       <h1 className="title">
-        Buscador
+        Buscador CEP
       </h1>
 
       <div className="containerInput">
@@ -13,16 +14,17 @@ function App() {
         type="text"
         placeholder="Digite seu cep..."/>
 
-        <button>
+        <button className="buttonSearch">
           <FiSearch size={25} color="#FFF"/>
         </button>
-
-        <main className="main">
+      </div>
+      <main className="main">
           <h2>CEP: 79003222</h2>
           <span>Rua Teste algum</span>
           <span>Complemento: Algum Complemento</span>
+          <span>Vila Rosa</span>
+          <span>Campo Grande - MS</span>
         </main>
-      </div>
     </div>
   );
 }
